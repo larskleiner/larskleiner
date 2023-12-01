@@ -18,6 +18,14 @@ article {
   @include media-breakpoint-up(md){
     font-size: 48px;
   }
+
+  .larskleiner {
+    width: 275px;
+
+    @include media-breakpoint-up(md){
+      width: auto;
+    }
+  }
 }
 
 img {
