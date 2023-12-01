@@ -5,7 +5,20 @@ export default defineNuxtConfig({
     [
       '@nuxtjs/i18n',
       {
-        locales: ['en', 'de'],
+        baseUrl: 'https://www.larskleiner.de',
+        strategy: 'prefix_and_default',
+        locales: [
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US'
+          },
+          {
+            name: 'Deutsch',
+            code: 'de',
+            iso: 'de-DE'
+          }
+        ],
         defaultLocale: 'de',
         detectBrowserLanguage: {
           useCookie: true,
