@@ -1,7 +1,10 @@
 @import "bootstrap/scss/bootstrap";
 
 body {
-  padding: 150px;
+  padding: 50px;
+  @include media-breakpoint-up(md){
+    padding: 150px;
+  }
 }
 
 nav a {
