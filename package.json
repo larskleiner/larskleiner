@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/google-fonts": "^3.1.0",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
     "@popperjs/core": "^2.11.8",
     "nuxt": "^3.8.2",

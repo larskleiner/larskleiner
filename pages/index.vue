@@ -19,6 +19,8 @@ const availableLocales = computed(() => {
         <NuxtLink :to="switchLocalePath(locale.code)">{{ locale.name ?? locale.code }}</NuxtLink>
       </template>
     </nav>
-    <p>{{ t('welcome') }}</p>
+    <article>
+      <p>{{ t('welcome') }}</p>
+    </article>
   </div>
 </template>

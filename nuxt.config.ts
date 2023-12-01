@@ -16,7 +16,8 @@ export default defineNuxtConfig({
           {
             name: 'Deutsch',
             code: 'de',
-            iso: 'de-DE'
+            iso: 'de-DE',
+            isCatchallLocale: true
           }
         ],
         defaultLocale: 'de',
@@ -28,7 +29,16 @@ export default defineNuxtConfig({
         },
         vueI18n: './i18n.config.ts'
       }
+    ],
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          'Permanent Marker': 400,
+        }
+      }
     ]
+
   ],
   css: ['~/assets/styles/main.scss']
 });
