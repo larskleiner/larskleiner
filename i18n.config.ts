@@ -3,10 +3,10 @@ export default defineI18nConfig(() => ({
     locale: 'de',
     messages: {
         en: {
-            welcome: 'Welcome'
+            hello: 'Hello, I\'m Lars Kleiner. Web developer, Drupal expert, cyclist and amateur photographer.'
         },
         de: {
-            welcome: 'Willkommen'
+            hello: 'Hallo, ich bin Lars Kleiner. Webentwickler, Drupal-Experte, Radfahrer und Hobbyfotograf.'
         }
     }
 }))

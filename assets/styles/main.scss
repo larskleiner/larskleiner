@@ -1,6 +1,22 @@
 @import "bootstrap/scss/bootstrap";
 
+body {
+  padding: 150px;
+}
+
+nav a {
+  float: right;
+}
+
 article {
   font-family: 'Permanent Marker';
-  font-size: 48px;
+  font-size: 24px;
+
+  @include media-breakpoint-up(md){
+    font-size: 48px;
+  }
+}
+
+img {
+  width: 55px;
 }

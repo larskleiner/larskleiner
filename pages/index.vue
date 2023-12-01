@@ -12,15 +12,22 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div class="container-fluid">
     <nav>
       <template v-for="(locale, index) in availableLocales" :key="locale.code">
         <template v-if="index"> | </template>
-        <NuxtLink :to="switchLocalePath(locale.code)">{{ locale.name ?? locale.code }}</NuxtLink>
+        <NuxtLink class="btn btn-primary" :to="switchLocalePath(locale.code)">{{ locale.name ?? locale.code }}</NuxtLink>
       </template>
     </nav>
     <article>
-      <p>{{ t('welcome') }}</p>
+      <div class="row">
+        <div class="col pt-3">
+          <NuxtImg preload src="/img/larskleiner.png" class="border border-secondary rounded-3" alt="Lars Kleiner" />
+        </div>
+        <div class="col-11">
+          {{ t('hello') }}
+        </div>
+      </div>
     </article>
   </div>
 </template>
