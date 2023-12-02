@@ -1,8 +1,19 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { locale, locales, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
+const availableLocales = computed(() => {
+  return (locales.value).filter(i => i.code !== locale.value)
+})
 </script>
 
 <template>
+    <nav>
+      <template v-for="(locale, index) in availableLocales" :key="locale.code">
+        <template v-if="index"> | </template>
+        <NuxtLink class="btn btn-outline-secondary mb-3" :to="switchLocalePath(locale.code)">{{ locale.name ?? locale.code }}</NuxtLink>
+      </template>
+    </nav>
     <article class="home pb-5">
       <div class="container-fluid">
         <div class="row larskleiner">
