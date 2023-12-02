@@ -1,25 +1,9 @@
 <script setup lang="ts">
-definePageMeta({
-  title: 'pages.title.top' // set resource key
-})
-
-const { locale, locales, t } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
-
-const availableLocales = computed(() => {
-  return (locales.value).filter(i => i.code !== locale.value)
-})
+const { t } = useI18n()
 </script>
 
 <template>
-  <div>
-    <nav>
-      <template v-for="(locale, index) in availableLocales" :key="locale.code">
-        <template v-if="index"> | </template>
-        <NuxtLink class="btn btn-primary btn-dark mb-3" :to="switchLocalePath(locale.code)">{{ locale.name ?? locale.code }}</NuxtLink>
-      </template>
-    </nav>
-    <article>
+    <article class="home pb-5">
       <div class="container-fluid">
         <div class="row larskleiner">
           <div class="col-md-1 pt-md-3">
@@ -47,5 +31,4 @@ const availableLocales = computed(() => {
         </div>
       </div>
     </article>
-  </div>
 </template>
