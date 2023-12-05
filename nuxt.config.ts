@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     {
       baseUrl: 'https://www.larskleiner.de',
       strategy: 'prefix_and_default',
-      skipSettingLocaleOnNavigate: true,
       locales: [
         {
           name: 'English',
