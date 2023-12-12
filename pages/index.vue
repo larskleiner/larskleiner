@@ -34,10 +34,34 @@ const availableLocales = computed(() => {
         </div>
         <div class="row mt-3">
           <div class="col-md-1 d-flex flex-column">
+            <NuxtLink to="https://www.drupal.org/u/larskleiner" class="float-md-end"><NuxtImg preload src="/img/drupal.png" alt="drupal" /></NuxtLink>
+          </div>
+          <div class="col-11">
+            {{ t('drupal') }}
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-1 d-flex flex-column">
+            <NuxtLink to="https://github.com/larskleiner" class="float-md-end"><NuxtImg preload src="/img/github.png" alt="github" /></NuxtLink>
+          </div>
+          <div class="col-11">
+            {{ t('github') }}
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-1 d-flex flex-column">
             <NuxtLink to="https://www.strava.com/athletes/2479560" class="float-md-end"><NuxtImg preload src="/img/strava.png" alt="strava" /></NuxtLink>
           </div>
           <div class="col-11">
             {{ t('strava') }}
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-1 d-flex flex-column">
+            <NuxtLink to="https://www.instagram.com/larskleiner/" class="float-md-end"><NuxtImg preload src="/img/instagram.png" alt="instagram" /></NuxtLink>
+          </div>
+          <div class="col-11">
+            {{ t('instagram') }} <NuxtLink to="https://www.flickr.com/photos/larskleiner/">Flickr</NuxtLink>
           </div>
         </div>
       </div>
