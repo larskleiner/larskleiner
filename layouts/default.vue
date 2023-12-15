@@ -18,6 +18,7 @@ const head = useLocaleHead({
       </template>
       <template v-for="meta in head.meta" :key="meta.id">
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
+        <Meta name="description" content="Lars Kleiner - Web developer, Drupal expert, cyclist and amateur photographer." />
       </template>
     </Head>
     <Body>
