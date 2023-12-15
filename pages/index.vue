@@ -29,7 +29,7 @@ const availableLocales = computed(() => {
             <NuxtLink to="https://www.linkedin.com/in/larskleiner" class="float-md-end"><NuxtImg src="/img/linkedin.png" format="webp" width="55" height="47" alt="linkedin" /></NuxtLink>
           </div>
           <div class="col-11">
-            {{ t('linkedin') }} <NuxtLink to="https://www.xing.com/profile/Lars_Kleiner">Xing</NuxtLink>
+            {{ t('linkedin') }} <NuxtLink to="https://www.xing.com/profile/Lars_Kleiner">Xing</NuxtLink>.
           </div>
         </div>
         <div class="row mt-3">
@@ -61,7 +61,7 @@ const availableLocales = computed(() => {
             <NuxtLink to="https://www.instagram.com/larskleiner/" class="float-md-end"><NuxtImg src="/img/instagram.png" format="webp" width="55" height="55" alt="instagram" /></NuxtLink>
           </div>
           <div class="col-11">
-            {{ t('instagram') }} <NuxtLink to="https://www.flickr.com/photos/larskleiner/">Flickr</NuxtLink>
+            {{ t('instagram') }} <NuxtLink to="https://www.flickr.com/photos/larskleiner/">Flickr</NuxtLink>.
           </div>
         </div>
       </div>
