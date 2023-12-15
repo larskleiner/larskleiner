@@ -18,7 +18,7 @@ const availableLocales = computed(() => {
       <div class="container-fluid">
         <div class="row larskleiner">
           <div class="col-md-1 d-flex flex-column">
-            <NuxtImg preload src="/img/larskleiner.svg" class="float-md-end" alt="Lars Kleiner" />
+            <NuxtImg preload src="/img/larskleiner.png" class="float-md-end" alt="Lars Kleiner" />
           </div>
           <div class="col-11">
             {{ t('hello') }}
@@ -29,7 +29,7 @@ const availableLocales = computed(() => {
             <NuxtLink to="https://www.linkedin.com/in/larskleiner" class="float-md-end"><NuxtImg preload src="/img/linkedin.png" alt="linkedin" /></NuxtLink>
           </div>
           <div class="col-11">
-            {{ t('linkedin') }}
+            {{ t('linkedin') }} <NuxtLink to="https://www.xing.com/profile/Lars_Kleiner">Xing</NuxtLink>
           </div>
         </div>
         <div class="row mt-3">
